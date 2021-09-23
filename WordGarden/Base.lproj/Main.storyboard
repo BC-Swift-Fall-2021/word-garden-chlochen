@@ -86,7 +86,11 @@
                                             <constraint firstAttribute="height" constant="30" id="808-vn-7NX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="0Ug-a8-ntA"/>
+                                            <action selector="guessedLetterFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="5r5-rA-jdA"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn9-DJ-loO">
                                         <rect key="frame" x="62" y="0.0" width="150" height="30"/>
@@ -100,9 +104,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="bn9-DJ-loO" firstAttribute="centerX" secondItem="Dnb-x9-Zey" secondAttribute="centerX" id="tgN-cr-mOS"/>
-                                </constraints>
                             </stackView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNB-af-RDi">
                                 <rect key="frame" x="115" y="198" width="90" height="30"/>
@@ -154,7 +155,7 @@
                         <outlet property="flowerImageView" destination="5Db-MU-DQH" id="Te5-P3-yUQ"/>
                         <outlet property="gameStatusMessageLabel" destination="Pga-Ya-cKl" id="nvY-gd-NCy"/>
                         <outlet property="guessLetterButton" destination="bn9-DJ-loO" id="Qom-hV-DFN"/>
-                        <outlet property="guessLetterTextField" destination="8tY-le-0Ff" id="OIx-Wk-iWX"/>
+                        <outlet property="guessedLetterTextField" destination="8tY-le-0Ff" id="OIx-Wk-iWX"/>
                         <outlet property="playAgainButton" destination="NNB-af-RDi" id="O4U-p0-uJm"/>
                         <outlet property="wordBeingRevealedLabel" destination="osV-LM-amG" id="3iy-2t-aOg"/>
                         <outlet property="wordsGuessedLabel" destination="AMU-Vq-66D" id="CPS-yk-tid"/>
