@@ -67,7 +67,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osV-LM-amG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osV-LM-amG">
                                 <rect key="frame" x="16" y="131" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="bp7-pa-veo"/>
@@ -88,7 +88,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
-                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="0Ug-a8-ntA"/>
+                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="cim-lI-J9L"/>
                                             <action selector="guessedLetterFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="5r5-rA-jdA"/>
                                         </connections>
                                     </textField>
@@ -159,7 +159,7 @@
                         <outlet property="playAgainButton" destination="NNB-af-RDi" id="O4U-p0-uJm"/>
                         <outlet property="wordBeingRevealedLabel" destination="osV-LM-amG" id="3iy-2t-aOg"/>
                         <outlet property="wordsGuessedLabel" destination="AMU-Vq-66D" id="CPS-yk-tid"/>
-                        <outlet property="wordsInGame" destination="xqz-6d-cuL" id="4fA-91-K0i"/>
+                        <outlet property="wordsInGameLabel" destination="xqz-6d-cuL" id="4fA-91-K0i"/>
                         <outlet property="wordsMissedLabel" destination="GRH-5K-Li3" id="s8w-YS-r8H"/>
                         <outlet property="wordsRemainingLabel" destination="XrP-eD-JtQ" id="GYV-sr-wwQ"/>
                     </connections>
